@@ -3,19 +3,15 @@ import KnoledgeBlock      from './knoledgeBlock.jsx';
 import questions          from './../questions.json';
 
 
-export default class Lesson extends Component {
-  constructor(props, state) {
-    super(props, state);
-    this.state = {};
-  }
 
-  render() {src/images/abeer.JPG
-    console.log(questions);
+export default class Lesson extends Component {
+  render() {
     return(
       <div>
         <h1>Knowledge Check Block </h1>
-        <KnoledgeBlock question="What is this a picture of?" options={["cookie","donuts","ummm"]} answer="ummm" image="./../images/giphy.gif"/>
-        <KnoledgeBlock question="What is this a picture of?" options={["person","coffee"]} answer="person" image="./../images/abeer.JPG"/>
+          {questions.map(function(object, index){
+            return <KnoledgeBlock key={index} question={object.question} options={object.options} answer={object.answer} image={object.image_url}/>
+          })}
       </div>
     );
   }

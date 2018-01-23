@@ -1,9 +1,13 @@
-{
-  "images": [
-    "IMG_5774.jpg",
-    "IMG_6305.jpg",
-    "IMG_6701.jpg",
-    "IMG_6732.jpg",
-    "IMG_6795.jpg"
-  ]
-}
+[{
+  "id": 1,
+  "question": "What is this a picture of?",
+  "answer": "A lady typing",
+  "image_url": "./images/giphy.gif",
+  "options": ["A lady typing","A man typing","No one"]
+},{
+  "id": 2,
+  "question": "What is this a picture of?",
+  "answer": "A smiling person",
+  "image_url":"./images/abeer.JPG",
+  "options": ["A lady typing","A man typing","A smiling person"]
+}]

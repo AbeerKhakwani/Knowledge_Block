@@ -19,7 +19,6 @@ render() {
         <Image    image={this.props.image}/>
         <FormSubmit options={this.props.options} answer={this.props.answer}/>
       </div>
-
     );
   }
 }

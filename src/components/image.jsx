@@ -12,7 +12,7 @@ export default class Image extends Component {
 
     return (
     <div style={style.divContainer} >
-        <img  style={style.imgStyle} src={this.props.image}  />
+        <img  style={style.imgStyle} src={this.props.image}  alt={this.props.image} />
     </div>
     );
   }
