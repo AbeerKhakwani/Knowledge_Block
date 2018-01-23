@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Style             from './../style.js';
+import Style              from './../style.js';
+// import Images             from './../../images';
 
 
 export default class Image extends Component {
@@ -9,7 +10,6 @@ export default class Image extends Component {
 
   render() {
     let style = Style.styles
-
     return (
     <div style={style.divContainer} >
         <img  style={style.imgStyle} src={this.props.image}  alt={this.props.image} />

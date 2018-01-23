@@ -3,7 +3,6 @@ import Option             from './option.jsx';
 import Style             from './../style.js';
 
 
-
 export default class Image extends Component {
   constructor(props, state) {
     super(props, state);
@@ -44,7 +43,6 @@ export default class Image extends Component {
     var result = '';
     var button  = <input style={style.submitStyle}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
     var redo = '';
-
 
     if(showAnswer === 'correct'){
       button =  <div>Right answer</div>;

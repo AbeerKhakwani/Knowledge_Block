@@ -1,13 +1,25 @@
 [{
   "id": 1,
   "question": "What is this a picture of?",
-  "answer": "A lady typing",
-  "image_url": "./images/giphy.gif",
-  "options": ["A lady typing","A man typing","No one"]
+  "answer": "A coffee & donut",
+  "image_url": "https://media.giphy.com/media/26u4itR3f2npTXG0w/giphy-downsized.gif",
+  "options": ["A lady typing","A coffee & donut","A cookie & coffee"]
 },{
   "id": 2,
   "question": "What is this a picture of?",
-  "answer": "A smiling person",
-  "image_url":"./images/abeer.JPG",
-  "options": ["A lady typing","A man typing","A smiling person"]
+  "answer": "A cat typing",
+  "image_url":"https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif",
+  "options": ["A cat typing","A man typing","A smiling person"]
+},{
+  "id": 3,
+  "question": "What is 2 +  3?",
+  "answer": "5",
+  "image_url": "",
+  "options": ["5","6","8"]
+},{
+  "id": 4,
+  "question": "What is 2 x 3?",
+  "answer": "six",
+  "image_url":"",
+  "options": ["seven","six","90"]
 }]
