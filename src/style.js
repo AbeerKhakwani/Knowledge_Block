@@ -2,24 +2,8 @@ export default new class Style {
   constructor(){
     this.styles = {
       // This is the styles for form
-      submitStyle :{
-        width: '100%',
-        minWidth: '10rem',
-        maxWidth: '17rem',
-        marginTop:'2em',
-        fontWeight: '700',
-        letterSpacing:'.04em',
-        textTransform: 'uppercase',
-        textDecoration: 'none',
-        textAlign: 'center',
-        fontSize: '1.2rem',
-        lineHeight: '3.4rem',
-        textOverflow: 'ellipsis',
-        color: '#fff',
-        backgroundColor: '#747a7e',
-        border: '2px solid transparent',
-        borderRadius:'2rem',
-      },
+
+
       center :{
         display:'flex',
         justifyContent:"center",
@@ -47,9 +31,6 @@ export default new class Style {
         marginTop:'3em',
         marginLeft: '2em'
       },
-      /// Block styles
-
-
       //Image styles
       imgStyle  :{
         maxWidth:'100%',

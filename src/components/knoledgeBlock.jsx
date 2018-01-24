@@ -5,10 +5,6 @@ import FormSubmit         from './formSubmit.jsx';
 // import style              from './../App.css'
 
 export default class KnoledgeBlock extends Component {
-  constructor(props, state) {
-    super(props, state);
-    this.state = {};
-  }
 
 render() {
   return (

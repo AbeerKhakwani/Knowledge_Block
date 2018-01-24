@@ -1,17 +1,39 @@
 .blockStyle{
-   border-width: 1px;
-   border-color: #ddd;
-   border-style: solid;
-   margin-top: 2%;
-   margin-bottom: 1%;
-   padding: 5%;
-   box-shadow: 0 0.4rem 1.2rem 0.2rem rgba(0,0,0,.05);
+  border-width: 1px;
+  border-color: #ddd;
+  border-style: solid;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 5%;
+  box-shadow: 0 0.4rem 1.2rem 0.2rem rgba(0,0,0,.05);
+}
+
+.submitStyle{
+  width: 100%;
+  min-width: 10rem;
+  max-width: 17rem;
+  margin-top:2em;
+  font-weight: 700;
+  letter-spacing:.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 3.4rem;
+  text-overflow: ellipsis;
+  color: #fff;
+  background-color: #747a7e;
+  border: 2px solid transparent;
+  border-radius:2rem;
+},
+
+.submitStyle[disabled]{
+  background-color: "green";
 }
 
 .hover{
-  /* height:84px; */
-border: solid 2px white;
-transition: border-color .5s linear;
+  border: solid 2px white;
+  transition: border-color .5s linear;
 }
 
 .hover:hover{
@@ -87,18 +109,17 @@ label {
 /* the checked style using the :checked pseudo class */
 .before:checked + span:before {
   background: grey;
-  /* box-shadow: 0 0 0 0.15em #000; */
 }
 .wrong + span:before {
-    background: #cc0000;
+  background: #cc0000;
 }
 .right + span:before {
-    background: green;
+  background: green;
 }
 
 /*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
@@ -109,8 +130,8 @@ label {
 }
 
 /*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -121,8 +142,8 @@ label {
 }
 
 /*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -134,8 +155,8 @@ label {
 }
 
 /*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -147,8 +168,8 @@ label {
 }
 
 /*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -160,8 +181,8 @@ label {
 }
 
 /*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
