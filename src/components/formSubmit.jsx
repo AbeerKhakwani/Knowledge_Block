@@ -38,7 +38,7 @@ export default class Image extends Component {
     var selectedOption = this.state.selectedOption;
     var handleOptionChange = this.handleOptionChange;
     var showAnswer = this.state.showAnswer;
-    var result = <input className={"submitStyle " + ((selectedOption)? "submitStylecolor" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
+    var result = <input className={"submit-style " + ((selectedOption)? "submit-style-color" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
     var redo = <a type="button" onClick={this.reset}> <FaRepeat size='1em' /> Take again </a>
     var answer = this.props.answer
 
