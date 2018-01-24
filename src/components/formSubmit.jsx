@@ -43,6 +43,7 @@ export default class Image extends Component {
     var result = '';
     var button  = <input style={style.submitStyle}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
     var redo = '';
+    var answer = this.props.answer
 
     if(showAnswer === 'correct'){
       button =  <div>Right answer</div>;
@@ -57,7 +58,7 @@ export default class Image extends Component {
         <div>
           <form>
             {this.props.options.map(function(object, index){
-              return <Option key={index} option={object} selectedOption={selectedOption} handleOptionChange={handleOptionChange}showAnswer={showAnswer}/>
+              return <Option key={index} option={object} selectedOption={selectedOption} handleOptionChange={handleOptionChange} showAnswer={showAnswer} answer={answer}/>
             })}
             <div style={style.center}>
               {button}
