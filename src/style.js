@@ -48,16 +48,7 @@ export default new class Style {
         marginLeft: '2em'
       },
       /// Block styles
-      blockStyle :{
-        borderWidth: '1px',
-        borderColor: '#ddd',
-        borderStyle: 'solid',
-        width:'40%',
-        marginTop: '2%',
-        marginLeft: '30%',
-        padding: '3rem 4rem 5rem',
-        boxShadow: '0 0.4rem 1.2rem 0.2rem rgba(0,0,0,.05)',
-      },
+
 
       //Image styles
       imgStyle  :{

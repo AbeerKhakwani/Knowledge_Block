@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Image              from './image.jsx';
 import Question           from './questions.jsx';
 import FormSubmit         from './formSubmit.jsx';
-import Style              from './../style.js';
+// import style              from './../App.css'
 
 export default class KnoledgeBlock extends Component {
   constructor(props, state) {
@@ -11,10 +11,8 @@ export default class KnoledgeBlock extends Component {
   }
 
 render() {
-  let style = Style.styles
-
   return (
-      <div  style={style.blockStyle}>
+      <div className="blockStyle">
         <Question question={this.props.question} />
         <Image    image={this.props.image}/>
         <FormSubmit options={this.props.options} answer={this.props.answer}/>
