@@ -1,5 +1,5 @@
 
-# _Knowledge_Check_Block_
+# _Knowledge Check Block_
 
 #### _A dynamic react quiz block_
 
