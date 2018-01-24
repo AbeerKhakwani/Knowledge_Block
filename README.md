@@ -24,4 +24,4 @@ Open http://localhost:5000
 
 ## Technologies Used
 
-_Javascript, JSON, CSS, React _
+_ Javascript, JSON, CSS, React _
