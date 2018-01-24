@@ -5,13 +5,15 @@
 
 #### By _**Abeer Khakwani**_
 
+
+
 ## Description
 
 _This application uses JSON data to render a quiz block that gives immediate feedback._
 
 ## Setup and Installation
 
-* _Just clone from GitHub onto local drive_
+* _This instalation uses npm_
 ```
 git clone https://github.com/AbeerKhakwani/Knowledge_Block.git
 cd Knowledge_Block
