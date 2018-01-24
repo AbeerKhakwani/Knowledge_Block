@@ -10,18 +10,21 @@
   "question": "What is this a picture of?",
   "answer": "A cat typing",
   "image_url":"https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif",
+  "answer_explanation": "Cat gif are the best!",
   "options": ["A cat typing","A man typing","A smiling person"]
 },{
   "id": 3,
-  "question": "What is 2 +  3?",
+  "question": "What is 2 + 3?",
   "answer": "5",
   "image_url": "",
+  "answer_explanation": "2 + 3 = 5",
   "options": ["5","6","8"]
 },{
   "id": 4,
-  "question": "What is 3 x 3?",
+  "question": "What is 3 + 3?",
   "answer": "six",
   "image_url":"",
+  "answer_explanation": "3 + 3",
   "options": ["seven","six","90"]
 }
 ]
