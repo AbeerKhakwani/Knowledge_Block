@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Style              from './../style.js';
 
 
 export default class Image extends Component {
@@ -8,10 +7,9 @@ export default class Image extends Component {
   }
 
   render() {
-    let style = Style.styles
     return (
-    <div style={style.divContainer} >
-        <img  style={style.imgStyle} src={this.props.image}  alt={this.props.image} />
+    <div className="divContainer">
+        <img  className="imgStyle" src={this.props.image}  alt={this.props.image} />
     </div>
     );
   }

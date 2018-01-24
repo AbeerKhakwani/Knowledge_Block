@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
 import Option             from './option.jsx';
-import Style              from './../style.js';
 import FaRepeat           from 'react-icons/lib/fa/repeat';
 import Correct            from 'react-icons/lib/fa/check-circle-o';
-import Incorrect              from 'react-icons/lib/fa/times-circle-o';
-
-
-
+import Incorrect          from 'react-icons/lib/fa/times-circle-o';
 
 export default class Image extends Component {
   constructor(props, state) {
@@ -39,13 +35,10 @@ export default class Image extends Component {
   }
 
   render() {
-
-    let style = Style.styles
-
     var selectedOption = this.state.selectedOption;
     var handleOptionChange = this.handleOptionChange;
     var showAnswer = this.state.showAnswer;
-    var result  = <input className="submitStyle"  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
+    var result = <input className={"submitStyle " + ((selectedOption)? "submitStylecolor" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
     var redo = <a type="button" onClick={this.reset}> <FaRepeat size='1em' /> Take again </a>
     var answer = this.props.answer
 
@@ -71,7 +64,7 @@ export default class Image extends Component {
           {this.props.options.map(function(object, index){
             return <Option key={index} option={object} selectedOption={selectedOption} handleOptionChange={handleOptionChange} showAnswer={showAnswer} answer={answer}/>
           })}
-          <div style={style.center}>
+          <div className="center">
             {result}
           </div>
         </form>
