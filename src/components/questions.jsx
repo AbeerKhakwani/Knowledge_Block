@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 
 export default class Question extends Component {
   render() {
-    var fontStyle= {
-      fontSize: "1.5em",
-    }
-
     return (
-      <p style={fontStyle} > {this.props.question} </p>
+    <div>
+      <p className="font-style"> {this.props.question} </p>
+      <div className="divContainer">
+        <img  className="imgStyle" src={this.props.image}  alt={this.props.image} />
+      </div>
+    </div>
     );
   }
 }
