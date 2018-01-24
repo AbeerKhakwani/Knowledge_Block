@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Lesson          from './components/Lesson.jsx';
+import Lesson          from './components/lesson.jsx';
 import                     './App.css';
 
 class App extends Component {
