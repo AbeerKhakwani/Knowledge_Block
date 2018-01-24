@@ -14,7 +14,7 @@ export default class Image extends Component {
    (this.props.showAnswer) ? color=   (this.props.option != this.props.answer)?"wrong" : "right" : ""
 
    return (
-      <div className={"hover "+ wrongOption}>
+      <div className={"border-animation "+ wrongOption + (!(this.props.showAnswer)? " hover": "")}>
           <label className="container">
             <input className={color} type="radio" onChange={this.props.handleOptionChange}  value={this.props.option} checked={(this.props.option == this.props.selectedOption)} disabled={(this.props.showAnswer)} />
               <span> {this.props.option}</span>

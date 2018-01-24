@@ -44,17 +44,19 @@ export default class Image extends Component {
 
     if(showAnswer){
         if(showAnswer === 'correct'){
-          result = <div>
+          result = <div className="test">
                    <Correct size="5em"/>
                     <p>Correct</p>
                     {redo}
                    </div>
         }
         else if(showAnswer === 'wrong'){
-          result = <div>
-                   <Incorrect size="5em"/>
+          result = <div className="test">
+                   <Incorrect size="3em"/>
                     <p>Incorrect</p>
+                  <div className="padding-top">
                     {redo}
+                  </div>
                    </div>
         }
     }
@@ -64,7 +66,7 @@ export default class Image extends Component {
           {this.props.options.map(function(object, index){
             return <Option key={index} option={object} selectedOption={selectedOption} handleOptionChange={handleOptionChange} showAnswer={showAnswer} answer={answer}/>
           })}
-          <div className="center">
+          <div className="result">
             {result}
           </div>
         </form>
