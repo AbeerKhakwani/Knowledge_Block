@@ -7,7 +7,6 @@ export default class Image extends Component {
     super(props, state);
   }
   render() {
-    let style = Style.styles
     var color = 'before';
     var wrongOption = ((this.props.option == this.props.selectedOption) && (this.props.showAnswer)) ? wrongOption ='optionSelected' : "";
     (this.props.showAnswer) ? color=   (this.props.option != this.props.answer)?"wrong" : "right" : ""

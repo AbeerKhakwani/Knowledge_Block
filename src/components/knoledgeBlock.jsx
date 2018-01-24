@@ -8,7 +8,7 @@ export default class KnoledgeBlock extends Component {
 
 render() {
   return (
-      <div className="blockStyle">
+      <div className="block-style">
         <Question question={this.props.question} />
         <Image    image={this.props.image}/>
         <FormSubmit options={this.props.options} answer={this.props.answer}/>

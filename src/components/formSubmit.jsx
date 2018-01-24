@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Option             from './option.jsx';
-import FaRepeat           from 'react-icons/lib/fa/repeat';
-import Correct            from 'react-icons/lib/fa/check-circle-o';
-import Incorrect          from 'react-icons/lib/fa/times-circle-o';
+import Result             from './result.jsx';
+
 
 export default class Image extends Component {
   constructor(props, state) {
@@ -39,26 +38,10 @@ export default class Image extends Component {
     var handleOptionChange = this.handleOptionChange;
     var showAnswer = this.state.showAnswer;
     var result = <input className={"submit-style " + ((selectedOption)? "submit-style-color" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
-    var redo = <a type="button" onClick={this.reset}> <FaRepeat size='1em' /> Take again </a>
     var answer = this.props.answer
 
     if(showAnswer){
-        if(showAnswer === 'correct'){
-          result = <div className="test">
-                   <Correct size="5em"/>
-                    <p>Correct</p>
-                    {redo}
-                   </div>
-        }
-        else if(showAnswer === 'wrong'){
-          result = <div className="test">
-                   <Incorrect size="3em"/>
-                    <p>Incorrect</p>
-                  <div className="padding-top">
-                    {redo}
-                  </div>
-                   </div>
-        }
+     result = <Result result={showAnswer} reset={this.reset}/>
     }
     return (
       <div>
