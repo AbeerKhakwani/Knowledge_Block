@@ -41,7 +41,7 @@ export default class Image extends Component {
     var answer = this.props.answer
 
     if(showAnswer){
-     result = <Result result={showAnswer} reset={this.reset}/>
+      result = <Result result={showAnswer} reset={this.reset} explanation={this.props.explanation}/>
     }
     return (
       <div>

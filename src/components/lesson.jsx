@@ -7,9 +7,9 @@ export default class Lesson extends Component {
     return(
       <div >
         <h1 style={{textAlign: 'center'}}>Knowledge Check Block </h1>
-          {questions.map(function(object, index){
-            return <KnoledgeBlock key={index} question={object.question} options={object.options} answer={object.answer} image={object.image_url}/>
-          })}
+    {questions.map(function(object, index){
+      return <KnoledgeBlock key={index} question={object.question} options={object.options} answer={object.answer} image={object.image_url} explanation={object.answer_explanation}/>
+    })}
       </div>
     );
   }

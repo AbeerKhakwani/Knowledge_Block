@@ -11,7 +11,7 @@ render() {
       <div className="block-style">
         <Question question={this.props.question} />
         <Image    image={this.props.image}/>
-        <FormSubmit options={this.props.options} answer={this.props.answer}/>
+        <FormSubmit options={this.props.options} answer={this.props.answer} explanation={this.props.explanation}/>
       </div>
     );
   }
