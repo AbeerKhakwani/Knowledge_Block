@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import Option             from './option.jsx';
-import Style             from './../style.js';
+import Style              from './../style.js';
+import FaRepeat           from 'react-icons/lib/fa/repeat';
+import Correct            from 'react-icons/lib/fa/check-circle-o';
+import Incorrect              from 'react-icons/lib/fa/times-circle-o';
+
+
 
 
 export default class Image extends Component {
@@ -40,23 +45,26 @@ export default class Image extends Component {
     var selectedOption = this.state.selectedOption;
     var handleOptionChange = this.handleOptionChange;
     var showAnswer = this.state.showAnswer;
-    var result = '';
-    var button  = <input className="submitStyle"  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
-    var redo = '';
+    var result  = <input className="submitStyle"  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
+    var redo = <a type="button" onClick={this.reset}> <FaRepeat size='1em' /> Take again </a>
     var answer = this.props.answer
 
     if(showAnswer){
-      <div>
         if(showAnswer === 'correct'){
-          button = <input  className ="" type="button" onClick={this.reset} value="Correct"/>
+          result = <div>
+                   <Correct size="5em"/>
+                    <p>Correct</p>
+                    {redo}
+                   </div>
         }
         else if(showAnswer === 'wrong'){
-          button= <div>Wrong Answer</div>
+          result = <div>
+                   <Incorrect size="5em"/>
+                    <p>Incorrect</p>
+                    {redo}
+                   </div>
         }
-        redo   =  <input type="button" onClick={this.reset} value="Take again"/>;
-      </div>
     }
-
     return (
       <div>
         <form>
@@ -64,12 +72,9 @@ export default class Image extends Component {
             return <Option key={index} option={object} selectedOption={selectedOption} handleOptionChange={handleOptionChange} showAnswer={showAnswer} answer={answer}/>
           })}
           <div style={style.center}>
-            {button}
-            {redo}
+            {result}
           </div>
         </form>
-
-        <div>{result}</div>
       </div>
     );
 

@@ -10,7 +10,7 @@ export default class Image extends Component {
 
     let style = Style.styles
     var color = 'before';
-    var wrongOption = ((this.props.option == this.props.selectedOption) && (this.props.showAnswer == "wrong")) ? wrongOption ='optionSelected' : "";
+    var wrongOption = ((this.props.option == this.props.selectedOption) && (this.props.showAnswer)) ? wrongOption ='optionSelected' : "";
    (this.props.showAnswer) ? color=   (this.props.option != this.props.answer)?"wrong" : "right" : ""
 
    return (
