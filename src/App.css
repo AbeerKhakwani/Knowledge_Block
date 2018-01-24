@@ -9,11 +9,16 @@
 }
 
 .hover{
-  height:84px;
+  /* height:84px; */
+border: solid 2px white;
+transition: border-color .5s linear;
 }
 
 .hover:hover{
   background-color: #f7f7f8;
+}
+.optionWrong{
+  border-color: black;
 }
 
 [type="radio"] {
@@ -29,6 +34,7 @@
 /* One radio button per line */
 label {
   padding-top:34px;
+  padding-bottom:34px;
   padding-left:2em;
   display: block;
   cursor: pointer;
@@ -54,9 +60,13 @@ label {
 }
 
 /* the checked style using the :checked pseudo class */
-[type="radio"]:checked + span:before {
+.before [type="radio"]:checked + span:before {
   background: grey;
   /* box-shadow: 0 0 0 0.15em #000; */
+}
+
+.hover {
+  position: relative;
 }
 
 /*

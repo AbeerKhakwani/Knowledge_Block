@@ -11,11 +11,18 @@ export default class Image extends Component {
   render() {
 
     let style = Style.styles
+    var wrongOption = ''
+    var wrong = ''
+
+    if((this.props.option == this.props.selectedOption) && (this.props.showAnswer == "wrong")){
+       wrongOption ='optionWrong'
+       wrong = "wrong";
+    }
 
    return (
-      <div className="hover">
+      <div className={"hover " + wrongOption }>
           <label className="container">
-            <input  type="radio" onChange={this.props.handleOptionChange}  value={this.props.option} checked={this.props.option == this.props.selectedOption} disabled={(this.props.showAnswer)} />
+            <input class={wrong} type="radio" onChange={this.props.handleOptionChange}  value={this.props.option} checked={this.props.option == this.props.selectedOption} disabled={(this.props.showAnswer)} />
               <span> {this.props.option}</span>
           </label>
       </div>
