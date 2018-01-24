@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Option             from './Option.jsx';
-import Result             from './Result.jsx';
+import Option             from './option.jsx';
+import Result             from './result.jsx';
 
 
 export default class Image extends Component {

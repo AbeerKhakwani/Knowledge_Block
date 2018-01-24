@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Question           from './Questions.jsx';
-import FormSubmit         from './FormSubmit.jsx';
+import Question           from './questions.jsx';
+import FormSubmit         from './formSubmit.jsx';
 
 export default class KnoledgeBlock extends Component {
 

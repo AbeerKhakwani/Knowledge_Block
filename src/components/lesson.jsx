@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import KnoledgeBlock      from './KnoledgeBlock.jsx';
+import KnoledgeBlock      from './knoledgeBlock.jsx';
 import questions          from './../questions.json';
 
 export default class Lesson extends Component {
