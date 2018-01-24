@@ -106,6 +106,7 @@ label {
 }
 a {
   color:silver;
+  cursor: pointer;
 }
 a:hover{
   color:#747a7e;

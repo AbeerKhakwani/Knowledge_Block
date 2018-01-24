@@ -7,7 +7,7 @@
 
 ## Description
 
-_This application renders a quiz block that gives immediate feedback._
+_This application uses JSON data to render a quiz block that gives immediate feedback._
 
 ## Setup and Installation
 
