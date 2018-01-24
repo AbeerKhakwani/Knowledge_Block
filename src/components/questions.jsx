@@ -5,8 +5,8 @@ export default class Question extends Component {
     return (
     <div>
       <p className="font-style"> {this.props.question} </p>
-      <div className="divContainer">
-        <img  className="imgStyle" src={this.props.image}  alt={this.props.image} />
+      <div className="div-container">
+        <img  className="img-style" src={this.props.image}  alt={this.props.image} />
       </div>
     </div>
     );

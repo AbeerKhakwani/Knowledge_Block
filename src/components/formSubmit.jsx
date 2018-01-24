@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Option             from './option.jsx';
-import Result             from './result.jsx';
+import Option             from './Option.jsx';
+import Result             from './Result.jsx';
 
 
 export default class Image extends Component {
@@ -37,13 +37,10 @@ export default class Image extends Component {
     var selectedOption = this.state.selectedOption;
     var handleOptionChange = this.handleOptionChange;
     var showAnswer = this.state.showAnswer;
-    var result = <input className={"submit-style " + ((selectedOption)? "submit-style-color" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}  />;
     var answer = this.props.answer
+    var result =(showAnswer)? <Result result={showAnswer} reset={this.reset} explanation={this.props.explanation}/>:<input className={"submit-style " + ((selectedOption)? "submit-style-color" :"")}  type="button" value="Submit" onClick={this.answerCheck} disabled={!(selectedOption)}/>;
 
-    if(showAnswer){
-      result = <Result result={showAnswer} reset={this.reset} explanation={this.props.explanation}/>
-    }
-    return (
+  return (
       <div>
         <form>
           {this.props.options.map(function(object, index){

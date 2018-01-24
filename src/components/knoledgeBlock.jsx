@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import Image              from './image.jsx';
-import Question           from './questions.jsx';
-import FormSubmit         from './formSubmit.jsx';
-// import style              from './../App.css'
+import Question           from './Questions.jsx';
+import FormSubmit         from './FormSubmit.jsx';
 
 export default class KnoledgeBlock extends Component {
 

@@ -1,5 +1,5 @@
 .font-style{
-  font-size: "1.5em",
+  font-size: 1.5em;
 }
 
 .block-style{
@@ -136,12 +136,12 @@ a:hover{
   margin-top:3em;
   margin-left: 2em
 }
-.imgStyle  {
+.img-style  {
   max-width:100%;
   max-height: 30rem;
   max-height: 20rem;
 }
-.divContainer {
+.div-container {
   width: 100%;
   display: flex;
   margin-bottom:2em;
